@@ -1,0 +1,25 @@
+p {
+    padding: 20px;
+    margin-left: 20%;
+}
+
+.Submit {
+    margin-left: 40%;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.Submit:hover {
+    color: black;
+    background-color: orange;
+}
+
+.result {
+    border: 3px solid #975ba0;
+    color: white;
+    margin-left: 10%;
+    margin-right: 20%;
+    padding: 80px;
+    text-align: center;
+    font-weight:bolder;
+}

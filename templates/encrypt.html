@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/encrypt.css' %}">
+
+
+<form action="." method="POST">
+    {% csrf_token %}
+    <p><textarea name="message" cols="100" rows="10"></textarea></p>
+    <div><input class="Submit" type="submit" value="Encrypt Now" name="title"></div>
+    <br><br><br><br>
+</form>
+
+{% endblock %}
+
+{% block encry %}
+
+<h2 class="result">Your results will be printed below!
+    <br><br>
+    <div>
+        {{ result }}
+    </div></h2>
+
+{% endblock %}

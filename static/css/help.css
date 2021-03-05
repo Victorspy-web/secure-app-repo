@@ -1,0 +1,16 @@
+#help-header{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+}
+
+.help-all {
+    margin-left: 32%;
+
+}
+
+li {
+    color: orange;
+font-family: sans-serif;
+font-size: 22px;
+}

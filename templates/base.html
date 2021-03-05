@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Secure Chat</title>
+
+</head>
+<body>
+
+
+    <h1 class="header">Secure Chat Site</h1>
+
+
+    <span class="links">
+        <a href="{% url 'home' %}" class="nav-bar">Home</a>
+        <a href="{% url 'encrypt' %}" class="nav-bar">Encrypt</a>
+        <a href="{% url 'decode' %}" class="nav-bar">Decode</a>
+    </span>
+
+    <br><br><br>
+
+    {% block content %}
+    {% endblock %}
+
+
+    {% block encry %}
+    {% endblock %}
+
+
+    {% block help %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/help.css' %}">
+    <br><br>
+
+    <ul>
+        <div class="help-all">
+            <h3 id="help-header">Tips on how to use this site</h3>
+                <li><p>The encrypt page is use to turn sentences to a non readable format which cannot be read by anyone</p></li>
+                <li>The decode page is then used to decode your encrypted sentence into a human readable sentence</li>
+        </div>
+    </ul>
+
+    {% endblock %}
+
+</body>
+</html>
